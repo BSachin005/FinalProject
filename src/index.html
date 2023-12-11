@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Revenge of Lights Out</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <div id="container" class="container">
+        <h1>Revenge of Lights Out</h1>
+        <div id="board" class="board"></div>
+        <button id="startBtn">Start Game</button>
+        <button id="newGameBtn">New Game</button>
+        <div id="timer">Time: 0s</div>
+    </div>
+    <script src="script.js"></script>
 
+    <div id="addendum" class="addendum">
+        <h2>Addendum</h2>
+        <p>
+            In creating "Revenge of Lights Out," I aimed to enhance the Lights Out game with additional features, styling, and user interaction. Below are some insights into the creative choices, challenges faced, and solutions implemented during the development process.
+        </p>
+
+        <h3>Design Choices:</h3>
+        <p>
+            - <strong>Colors:</strong> I selected a light green background color to create a visually pleasing and calming environment for the game.<br>
+            - <strong>Layout:</strong> Using flexbox, I centered the game container both vertically and horizontally to improve the overall presentation.
+        </p>
+
+        <h3>Game Features:</h3>
+        <p>
+            - <strong>Timer:</strong> To add an element of challenge, I included a timer that starts when the player clicks the "Start Game" button and stops when the game is successfully completed.<br>
+            - <strong>New Game Button:</strong> The "New Game" button resets the board and timer, allowing users to restart the game at any time.
+        </p>
+
+        <h3>Challenges and Solutions:</h3>
+        <p>
+            - <strong>Styling:</strong> Ensuring a visually appealing design while maintaining responsiveness was a challenge. The use of flexbox and carefully chosen colors helped create an aesthetically pleasing layout.<br>
+            - <strong>Timer Implementation:</strong> Integrating a timer required careful handling of intervals. The startTimer and resetTimer functions manage the timer's state, ensuring accuracy.<br>
+            - <strong>User Interaction:</strong> Balancing user interactivity with game functionality was key. The "Start Game" and "New Game" buttons provide a clear and intuitive way for users to control the game.
+        </p>
+
+        <h3>Insights:</h3>
+        <p>
+            - Structuring the code modularly, using functions for specific tasks, improved code readability and maintenance.<br>
+            - Continuous testing and iteration were essential for refining the game's features and ensuring a smooth user experience.<br>
+            - Incorporating user feedback during the development process helped in identifying areas for improvement.
+        </p>
+    </div>
+</body>
 </html>
